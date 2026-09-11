@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+
+if ! command -v stow >/dev/null 2>&1; then
+  if ! command -v pacman >/dev/null 2>&1; then
+    printf 'Erro: este instalador requer Arch Linux e pacman.\n' >&2
+    exit 1
+  fi
+
+  printf 'GNU Stow não encontrado. Instalando pelo pacman...\n'
+  sudo pacman --sync --needed stow
+fi
+
+stow --restow --target="$HOME" --dir="$repo_dir" home
+printf 'Dotfiles vinculados com sucesso.\n'

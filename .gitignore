@@ -1,0 +1,23 @@
+# Local and generated files
+.DS_Store
+*.log
+*.bak
+*.bak.*
+
+# Nested repositories from Omarchy themes/plugins
+home/.config/omarchy/themes/**/.git/
+home/.config/omarchy/plugins/**/.git/
+home/.config/omarchy/plugins/**/backend/dist/
+home/.config/omarchy/plugins/**/docs/screenshots/
+home/.config/omarchy/plugins/**/preview.png
+
+# Machine-specific overrides
+home/.config/hypr/monitors.local.lua
+home/.config/omarchy/local/
+
+# Secrets and credentials
+*.key
+*.pem
+*.secret
+.env
+.env.*

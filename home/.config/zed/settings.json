@@ -1,0 +1,333 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "diff_view_style": "unified",
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "which_key": {
+    "delay_ms": 500,
+    "enabled": true,
+  },
+  "inlay_hints": {
+    "show_other_hints": false,
+    "show_parameter_hints": true,
+  },
+  "theme": "Flexoki Dark",
+  "cli_default_open_behavior": "new_window",
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "window_decorations": "server",
+  "disable_ai": false,
+  "git_panel": {
+    "group_by": "staging",
+    "dock": "left",
+    "tree_view": true,
+  },
+  "base_keymap": "JetBrains",
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true,
+  },
+  "preferred_line_length": 80,
+  "prettier": {},
+  "vim_mode": false,
+  "vim": {
+    "cursor_shape": {
+      "insert": "bar",
+      "visual": "underline",
+    },
+  },
+  "cursor_blink": true,
+  "relative_line_numbers": "enabled",
+  "ui_font_family": "Departure Mono",
+  "buffer_font_size": 20.0,
+  "buffer_font_family": "iA Writer Mono S",
+  "format_on_save": "on",
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "default_profile": "write",
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+      "enable_thinking": false,
+    },
+    "default_model": {
+      "effort": "medium",
+      "provider": "zed.dev",
+      "model": "claude-sonnet-5",
+      "enable_thinking": true,
+    },
+    "commit_message_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-5",
+    },
+  },
+  "tab_size": 2,
+  "languages": {
+    "Markdown": {
+      "use_on_type_format": true,
+    },
+    "Rust": {
+      "auto_indent": "syntax_aware",
+      "tab_size": 2,
+      "format_on_save": "on",
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "indent_guides": {},
+      "tab_size": 2,
+      "formatter": "language_server",
+    },
+    "JavaScript": {
+      "formatter": "language_server",
+    },
+  },
+  "icon_theme": "Zed (Default)",
+  "agent_servers": {
+    "glm-acp-agent": {
+      "type": "registry",
+    },
+    "pi-acp": {
+      "type": "registry",
+    },
+    "opencode": {
+      "default_config_options": {
+        "effort": "high",
+        "model": "zai-coding-plan/glm-5.2",
+      },
+      "type": "registry",
+    },
+    "gemini": {
+      "type": "registry",
+    },
+    "github-copilot": {
+      "type": "registry",
+    },
+  },
+  "edit_predictions": {
+    "allow_data_collection": "yes",
+    "mode": "eager",
+    "provider": "zed",
+  },
+  "ui_font_size": 20.0,
+  "buffer_line_height": {
+    "custom": 2,
+  },
+  "agent_ui_font_size": 19.0,
+  "agent_buffer_font_size": 19.0,
+  "theme_overrides": {
+    "Tokyo Night": {
+      "border": "#16161e",
+      "border.variant": "#16161e",
+
+      "title_bar.background": "#16161e",
+      "panel.background": "#16161e",
+      "pane.focused_border": "#7aa2f7",
+
+      "vim.normal.background": "#7aa2f7",
+      "vim.insert.background": "#9ece6a",
+      "vim.replace.background": "#f7768e",
+      "vim.visual.background": "#bb9af7",
+      "vim.visual_line.background": "#bb9af7",
+      "vim.visual_block.background": "#ff9e64",
+
+      "vim.normal.foreground": "#1a1b26",
+      "vim.insert.foreground": "#1a1b26",
+      "vim.replace.foreground": "#1a1b26",
+      "vim.visual.foreground": "#1a1b26",
+      "vim.visual_line.foreground": "#1a1b26",
+      "vim.visual_block.foreground": "#1a1b26",
+
+      "players": [
+        {
+          "cursor": "#7aa2f7",
+        },
+      ],
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+      },
+    },
+    "Nord Dark": {
+      "vim.normal.background": "#88C0D0",
+      "vim.insert.background": "#A3BE8C",
+      "vim.replace.background": "#BF616A",
+      "vim.visual.background": "#B48EAD",
+      "vim.visual_line.background": "#B48EAD",
+      "vim.visual_block.background": "#D08770",
+
+      "vim.normal.foreground": "#2E3440",
+      "vim.insert.foreground": "#2E3440",
+      "vim.replace.foreground": "#2E3440",
+      "vim.visual.foreground": "#2E3440",
+      "vim.visual_line.foreground": "#2E3440",
+      "vim.visual_block.foreground": "#2E3440",
+
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+      },
+    },
+    "Monokai Pro (CE)": {
+      "vim.normal.background": "#78DCE8",
+      "vim.insert.background": "#A9DC76",
+      "vim.replace.background": "#FF6188",
+      "vim.visual.background": "#AB9DF2",
+      "vim.visual_line.background": "#AB9DF2",
+      "vim.visual_block.background": "#FC9867",
+
+      "vim.normal.foreground": "#2D2A2E",
+      "vim.insert.foreground": "#2D2A2E",
+      "vim.replace.foreground": "#2D2A2E",
+      "vim.visual.foreground": "#2D2A2E",
+      "vim.visual_line.foreground": "#2D2A2E",
+      "vim.visual_block.foreground": "#2D2A2E",
+
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+      },
+    },
+    "One Dark Pro": {
+      "border": "#23272E",
+      "border.variant": "#23272E",
+    },
+    "Everforest Dark Medium (material)": {
+      "border": "#2d353b",
+      "border.variant": "#2d353b",
+    },
+    "Flexoki Dark": {
+      "border": "#100f0f",
+      "border.variant": "#100f0f",
+      "title_bar.background": "#100f0f",
+      "panel.background": "#100f0f",
+    },
+    "Aura Dark": {
+      "border.variant": "#15141C",
+      "border": "#15141C",
+      "title_bar.background": "#15141C",
+      "panel.background": "#15141C",
+      "pane.focused_border": "#4E466E",
+      "players": [
+        {
+          "cursor": "db9dff",
+        },
+      ],
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+      },
+    },
+    "One Dark": {
+      "title_bar.background": "#1e2127",
+      "panel.background": "#1e2127",
+      "pane.focused_border": "#61afef",
+
+      "vim.normal.background": "#61afef",
+      "vim.insert.background": "#98c379",
+      "vim.replace.background": "#e06c75",
+      "vim.visual.background": "#c678dd",
+      "vim.visual_line.background": "#c678dd",
+      "vim.visual_block.background": "#e5c07b",
+
+      "vim.normal.foreground": "#1e2127",
+      "vim.insert.foreground": "#1e2127",
+      "vim.replace.foreground": "#1e2127",
+      "vim.visual.foreground": "#1e2127",
+      "vim.visual_line.foreground": "#1e2127",
+      "vim.visual_block.foreground": "#1e2127",
+
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
+        },
+        "comment.doc": {
+          "font_style": "italic",
+        },
+      },
+    },
+  },
+  "title_bar": {
+    "show_user_menu": true,
+    "show_user_picture": true,
+    "show_onboarding_banner": false,
+    "show_project_items": false,
+    "show_branch_name": false,
+  },
+  "tab_bar": {
+    "show": false,
+  },
+  "tabs": {
+    "file_icons": true,
+  },
+  "toolbar": {
+    "quick_actions": false,
+  },
+  "status_bar": {
+    "active_language_button": false,
+    "cursor_position_button": false,
+    "experimental.show": false,
+  },
+  "project_panel": {
+    "dock": "right",
+    "default_width": 400,
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    "sticky_scroll": false,
+    "scrollbar": {
+      "show": "never",
+    },
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "outline_panel": {
+    "dock": "left",
+    "default_width": 300,
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+  "file_finder": {
+    "modal_max_width": "large",
+    "include_ignored": "all",
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+    "breakpoints": false,
+  },
+  "indent_guides": {
+    "enabled": false,
+  },
+}
