@@ -21,7 +21,7 @@
     "show_other_hints": false,
     "show_parameter_hints": true,
   },
-  "theme": "Flexoki Dark",
+  "theme": "Omazed",
   "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
     "button": false,
@@ -93,7 +93,11 @@
       "formatter": "language_server",
     },
   },
-  "icon_theme": "Zed (Default)",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
   "agent_servers": {
     "glm-acp-agent": {
       "type": "registry",
