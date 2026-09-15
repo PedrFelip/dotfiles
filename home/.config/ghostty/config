@@ -2,7 +2,6 @@
 config-file = ?"~/.local/state/omarchy/current/theme/ghostty.conf"
 
 # Font
-font-family = "Departure Mono"
 font-style = Regular
 font-size = 11
 
