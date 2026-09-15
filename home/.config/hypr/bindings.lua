@@ -36,7 +36,12 @@ hl.unbind("SUPER + F")
 hl.unbind("SUPER + ALT + F")
 o.bind("SUPER + ALT + F", "Full Screen", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 
-o.bind("SUPER + F", "Full Width", hl.dsp.window.fullscreen({mode = "maximized"}))
+o.bind("SUPER + F", "Full Width", hl.dsp.window.fullscreen({ mode = "maximized" }))
 
 hl.unbind("SUPER + SHIFT + F")
 o.bind("SUPER + E", "File manager", { omarchy = "nautilus" })
+
+hl.unbind("SUPER + P")
+o.bind("SUPER + P", "Clipboard manager", "omarchy-shell shell toggle omarchy.clipboard")
+
+hl.unbind("SUPER + CTRL + V")
