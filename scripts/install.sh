@@ -44,7 +44,7 @@ while IFS= read -r relative; do
   backup_created=1
 done < <(git -C "$repo_dir" ls-files --cached --others --exclude-standard)
 
-if (( backup_created )); then
+if ((backup_created)); then
   printf 'Arquivos antigos movidos para: %s\n' "$backup_root"
 fi
 
@@ -72,5 +72,8 @@ install_plugin() {
 
 install_plugin quickshell.spotify https://github.com/stappmus/Omarchy-Spotify.git
 install_plugin stappmus.lyrics https://github.com/stappmus/Omasing.git
+
+# Instala o tema Coffee
+omarchy theme install https://github.com/bjarneo/omarchy-coffee-theme
 
 printf 'Dotfiles vinculados com sucesso.\n'
