@@ -76,4 +76,11 @@ install_plugin stappmus.lyrics https://github.com/stappmus/Omasing.git
 # Instala o tema Coffee
 omarchy theme install https://github.com/bjarneo/omarchy-coffee-theme
 
+# Tema Kanji nos workspaces
+omarchy pkg add noto-fonts-cjk
+
+# garante que font eseja no sistema e ativa o plugin de workspaces do Kanji
+omarchy plugin add https://github.com/bjarneo/omarchy-kanji-workspaces.git --enable
+omarchy plugin disable omarchy.workspaces
+
 printf 'Dotfiles vinculados com sucesso.\n'
