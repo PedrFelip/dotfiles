@@ -34,12 +34,18 @@
           "id": "omarchy.weather"
         },
         {
+          "id": "stappmus.lyrics"
+        },
+        {
           "id": "omarchy.system-update"
         }
       ],
       "right": [
         {
           "id": "omarchy.tray"
+        },
+        {
+          "id": "quickshell.spotify"
         },
         {
           "id": "omarchy.agents"
