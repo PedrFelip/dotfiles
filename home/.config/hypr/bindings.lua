@@ -45,3 +45,19 @@ hl.unbind("SUPER + P")
 o.bind("SUPER + P", "Clipboard manager", "omarchy-shell shell toggle omarchy.clipboard")
 
 hl.unbind("SUPER + CTRL + V")
+
+-- Capture shortcuts (replace the default Print-key bindings)
+hl.unbind("PRINT")
+hl.unbind("ALT + PRINT")
+hl.unbind("SUPER + PRINT")
+hl.unbind("SUPER + CTRL + PRINT")
+
+-- These keys are used by default for Maps, Calendar, and optionally Obsidian.
+hl.unbind("SUPER + SHIFT + S")
+hl.unbind("SUPER + SHIFT + C")
+hl.unbind("SUPER + SHIFT + O")
+
+o.bind("SUPER + SHIFT + S", "Screenshot", "omarchy-capture-screenshot")
+o.bind("SUPER + SHIFT + R", "Screenrecording", "omarchy-capture-screenrecording --stop-recording || omarchy-menu toggle trigger.capture.screenrecord")
+o.bind("SUPER + SHIFT + C", "Color picker", "pkill hyprpicker || hyprpicker -a")
+o.bind("SUPER + SHIFT + O", "Extract text (OCR)", "omarchy-capture-text")
