@@ -100,6 +100,11 @@ return {
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
-    opts = {},
+    opts = { delay = 1000 },
+    config = function(_, opts)
+      require("which-key").setup({
+        delay = opts.delay,
+      })
+    end,
   },
 }

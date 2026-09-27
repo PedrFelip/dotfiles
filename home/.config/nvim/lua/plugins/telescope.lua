@@ -13,12 +13,20 @@ return {
       color_devicons = true,
       mappings = {
         i = {
-          ["<C-j>"] = require("telescope.actions").move_selection_next,
-          ["<C-k>"] = require("telescope.actions").move_selection_previous,
+          ["<C-j>"] = function(...)
+            require("telescope.actions").move_selection_next(...)
+          end,
+          ["<C-k>"] = function(...)
+            require("telescope.actions").move_selection_previous(...)
+          end,
         },
         n = {
-          ["<C-j>"] = require("telescope.actions").move_selection_next,
-          ["<C-k>"] = require("telescope.actions").move_selection_previous,
+          ["<C-j>"] = function(...)
+            require("telescope.actions").move_selection_next(...)
+          end,
+          ["<C-k>"] = function(...)
+            require("telescope.actions").move_selection_previous(...)
+          end,
         },
       },
     },
