@@ -1,3 +1,22 @@
+local ignored_directories = {
+  ".git",
+  "node_modules",
+  "vendor",
+  "dist",
+  "build",
+  ".cache",
+  ".venv",
+  "venv",
+  "__pycache__",
+  ".pytest_cache",
+  ".mypy_cache",
+  ".ruff_cache",
+  "coverage",
+  ".next",
+  ".nuxt",
+  ".turbo",
+}
+
 return {
   {
     "folke/snacks.nvim",
@@ -41,7 +60,17 @@ return {
     },
     opts = {
       window = { position = "right", width = 32 },
-      filesystem = { filtered_items = { visible = true } },
+      filesystem = {
+        filtered_items = {
+          visible = false,
+          hide_dotfiles = false,
+          hide_gitignored = false,
+          hide_by_name = ignored_directories,
+          never_show_by_pattern = {
+            vim.fn.stdpath("config") .. "/lua/plugins/theme.lua",
+          },
+        },
+      },
     },
   },
   {
@@ -54,7 +83,6 @@ return {
       wilder.set_option("renderer", wilder.popupmenu_renderer(
         wilder.popupmenu_border_theme({
           highlights = { border = "Normal", accent = "WilderAccent" },
-          border = "rounded",
           max_height = "75%",
           min_height = 0,
           prompt_position = "top",
