@@ -21,7 +21,7 @@ return {
     },
     views = {
       cmdline_popup = {
-        position = { row = -2, col = 0 },
+        position = { row = -1, col = 0 },
         size = { width = "100%", height = "auto" },
         border = { style = "none", padding = { 0, 1 } },
       },
