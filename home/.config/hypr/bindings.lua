@@ -39,7 +39,7 @@ o.bind("SUPER + ALT + F", "Full Screen", hl.dsp.window.fullscreen({ mode = "full
 o.bind("SUPER + F", "Full Width", hl.dsp.window.fullscreen({ mode = "maximized" }))
 
 hl.unbind("SUPER + SHIFT + F")
-o.bind("SUPER + E", "File manager", { omarchy = "nautilus" })
+o.bind("SUPER + E", "File manager", { launch= "flea --gui" })
 
 hl.unbind("SUPER + P")
 o.bind("SUPER + P", "Clipboard manager", "omarchy-shell shell toggle omarchy.clipboard")
@@ -61,3 +61,8 @@ o.bind("SUPER + SHIFT + S", "Screenshot", "omarchy-capture-screenshot")
 o.bind("SUPER + SHIFT + R", "Screenrecording", "omarchy-capture-screenrecording --stop-recording || omarchy-menu toggle trigger.capture.screenrecord")
 o.bind("SUPER + SHIFT + C", "Color picker", "pkill hyprpicker || hyprpicker -a")
 o.bind("SUPER + SHIFT + O", "Extract text (OCR)", "omarchy-capture-text")
+
+hl.unbind("SUPER + ALT + SHIFT + F")
+o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "$(omarchy-cmd-terminal-cwd)"' })
+
+o.window("com.thisisgm.flea.picker", { tag = "+floating-window" })
