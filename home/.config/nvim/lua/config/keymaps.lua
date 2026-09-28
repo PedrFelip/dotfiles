@@ -9,13 +9,6 @@ map("n", "<C-j>", "<C-w>j", { desc = "Janela abaixo" })
 map("n", "<C-k>", "<C-w>k", { desc = "Janela acima" })
 map("n", "<C-l>", "<C-w>l", { desc = "Janela à direita" })
 
-map("n", "<leader>ud", function()
-  if Snacks.dim.enabled then
-    Snacks.dim.disable()
-  else
-    Snacks.dim.enable()
-  end
-end, { desc = "Alternar Dim" })
 map("n", "tt", "<cmd>ToggleTerm direction=horizontal<CR>", { desc = "Alternar terminal inferior" })
 map("n", "tf", "<cmd>ToggleTerm direction=float<CR>", { desc = "Alternar terminal flutuante" })
 map("n", "<leader>q", "<cmd>Trouble diagnostics toggle<CR>", { desc = "Alternar diagnósticos" })

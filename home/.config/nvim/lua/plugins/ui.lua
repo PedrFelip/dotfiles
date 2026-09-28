@@ -19,34 +19,6 @@ local ignored_directories = {
 
 return {
   {
-    "folke/snacks.nvim",
-    priority = 1000,
-    lazy = false,
-    opts = {
-      bigfile = { enabled = false },
-      dashboard = { enabled = false },
-      dim = { enabled = false },
-      explorer = { enabled = false },
-      indent = { enabled = false },
-      input = { enabled = false },
-      notifier = { enabled = false },
-      picker = {
-        enabled = true,
-        sources = {
-          explorer = { enabled = false },
-        },
-      },
-      quickfile = { enabled = false },
-      scroll = { enabled = false },
-      statuscolumn = { enabled = false },
-      terminal = { enabled = false },
-      words = { enabled = false },
-    },
-    config = function(_, opts)
-      require("snacks").setup(opts)
-    end,
-  },
-  {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     cmd = "Neotree",
@@ -72,24 +44,6 @@ return {
         },
       },
     },
-  },
-  {
-    "gelguy/wilder.nvim",
-    event = "CmdlineEnter",
-    build = ":UpdateRemotePlugins",
-    config = function()
-      local wilder = require("wilder")
-      wilder.setup({ modes = { ":", "/", "?" } })
-      wilder.set_option("renderer", wilder.popupmenu_renderer(
-        wilder.popupmenu_border_theme({
-          highlights = { border = "Normal", accent = "WilderAccent" },
-          max_height = "75%",
-          min_height = 0,
-          prompt_position = "top",
-        })
-      ))
-      vim.api.nvim_set_hl(0, "WilderAccent", { link = "Statement" })
-    end,
   },
   {
     "nvim-lualine/lualine.nvim",

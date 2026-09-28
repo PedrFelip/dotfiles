@@ -37,6 +37,7 @@ require("lazy").setup({
     { import = "plugins.blink" },
     { import = "plugins.lazygit" },
     { import = "plugins.lsp" },
+    { import = "plugins.noice" },
     { import = "plugins.omarchy-theme-hotreload" },
     { import = "plugins.telescope" },
     { import = "plugins.terminal" },
