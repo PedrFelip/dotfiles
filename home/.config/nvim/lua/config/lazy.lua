@@ -16,13 +16,18 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-local theme_file = vim.fn.expand("~/.local/state/omarchy/current/theme/neovim.lua")
+local theme_file =
+  vim.fn.expand("~/.local/state/omarchy/current/theme/neovim.lua")
 local omarchy_colorscheme
 if vim.fn.filereadable(theme_file) == 1 then
   local ok, specs = pcall(dofile, theme_file)
   if ok and type(specs) == "table" then
     for _, spec in ipairs(specs) do
-      if type(spec) == "table" and type(spec.opts) == "table" and spec.opts.colorscheme then
+      if
+        type(spec) == "table"
+        and type(spec.opts) == "table"
+        and spec.opts.colorscheme
+      then
         omarchy_colorscheme = spec.opts.colorscheme
       end
     end
