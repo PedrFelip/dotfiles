@@ -58,7 +58,7 @@ return {
       sorting_strategy = "ascending",
       layout_config = {
         horizontal = {
-          prompt_position = "bottom",
+          prompt_position = "top",
           preview_width = 0.5,
         },
         width = 0.85,
@@ -95,7 +95,7 @@ return {
       find_files = {
         theme = "ivy",
         layout_config = {
-          height = 10,
+          height = 12,
         },
         find_command = (function()
           local args = { "rg", "--files", "--hidden", "--no-ignore" }
