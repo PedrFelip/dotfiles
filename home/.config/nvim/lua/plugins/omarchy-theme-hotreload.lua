@@ -23,8 +23,8 @@ return {
         local colorscheme
         for _, spec in ipairs(theme_spec) do
           if type(spec) == "table" then
-            if spec[1] == "LazyVim/LazyVim" then
-              colorscheme = spec.opts and spec.opts.colorscheme
+            if spec.opts and spec.opts.colorscheme then
+              colorscheme = spec.opts.colorscheme
             elseif spec[1] and not plugin_name then
               plugin_name = spec.name or spec[1]
             end
@@ -34,8 +34,6 @@ return {
           return
         end
 
-        -- Omarchy theme files use a LazyVim spec to declare the colorscheme.
-        -- Kickstart only needs the colorscheme name; it must not install LazyVim.
         vim.g.omarchy_colorscheme = colorscheme
 
         local plugin = plugin_name and require("lazy.core.config").plugins[plugin_name]

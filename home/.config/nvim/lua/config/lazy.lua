@@ -17,18 +17,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local theme_file = vim.fn.expand("~/.local/state/omarchy/current/theme/neovim.lua")
-local theme_plugins = {}
 local omarchy_colorscheme
 if vim.fn.filereadable(theme_file) == 1 then
   local ok, specs = pcall(dofile, theme_file)
   if ok and type(specs) == "table" then
     for _, spec in ipairs(specs) do
-      if type(spec) == "table" then
-        if spec[1] == "LazyVim/LazyVim" then
-          omarchy_colorscheme = spec.opts and spec.opts.colorscheme
-        elseif type(spec[1]) == "string" then
-          theme_plugins[#theme_plugins + 1] = spec
-        end
+      if type(spec) == "table" and type(spec.opts) == "table" and spec.opts.colorscheme then
+        omarchy_colorscheme = spec.opts.colorscheme
       end
     end
   end
@@ -38,8 +33,16 @@ vim.g.omarchy_colorscheme = omarchy_colorscheme
 
 require("lazy").setup({
   spec = {
-    { import = "plugins" },
-    unpack(theme_plugins),
+    { import = "plugins.all-themes" },
+    { import = "plugins.blink" },
+    { import = "plugins.lazygit" },
+    { import = "plugins.lsp" },
+    { import = "plugins.omarchy-theme-hotreload" },
+    { import = "plugins.telescope" },
+    { import = "plugins.terminal" },
+    { import = "plugins.treesitter" },
+    { import = "plugins.trouble" },
+    { import = "plugins.ui" },
   },
   install = { colorscheme = { "tokyonight-night", "habamax" } },
 })
