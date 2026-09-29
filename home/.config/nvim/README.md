@@ -27,5 +27,6 @@ A tecla líder é espaço.
 - `Espaço Espaço`: buscar buffers
 - `t t`: alternar terminal inferior
 - `t f`: alternar terminal flutuante
+- No modo de inserção, `(`, `[` e `{`, além de aspas simples e duplas, inserem também o delimitador de fechamento.
 
 Os atalhos do LSP ficam disponíveis quando um servidor se conecta ao buffer. Para abrir o gerenciador de plugins, execute `:Lazy`.
