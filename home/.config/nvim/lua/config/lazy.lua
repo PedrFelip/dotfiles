@@ -38,17 +38,7 @@ vim.g.omarchy_colorscheme = omarchy_colorscheme
 
 require("lazy").setup({
   spec = {
-    { import = "plugins.all-themes" },
-    { import = "plugins.blink" },
-    { import = "plugins.lazygit" },
-    { import = "plugins.lsp" },
-    { import = "plugins.noice" },
-    { import = "plugins.omarchy-theme-hotreload" },
-    { import = "plugins.telescope" },
-    { import = "plugins.terminal" },
-    { import = "plugins.treesitter" },
-    { import = "plugins.trouble" },
-    { import = "plugins.ui" },
+    { import = "plugins" },
   },
   install = { colorscheme = { "tokyonight-night", "habamax" } },
 })
