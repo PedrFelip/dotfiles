@@ -24,6 +24,14 @@ opt.showmode = false
 opt.cmdheight = 0
 opt.laststatus = 2
 
+local yank_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
+vim.api.nvim_create_autocmd("TextYankPost", {
+  group = yank_group,
+  callback = function()
+    vim.highlight.on_yank({ timeout = 300 })
+  end,
+})
+
 vim.diagnostic.config({
   virtual_text = {
     spacing = 2,
