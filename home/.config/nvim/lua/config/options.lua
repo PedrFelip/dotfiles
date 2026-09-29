@@ -23,6 +23,7 @@ opt.confirm = true
 opt.showmode = false
 opt.cmdheight = 0
 opt.laststatus = 2
+opt.hlsearch = true
 
 local yank_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {

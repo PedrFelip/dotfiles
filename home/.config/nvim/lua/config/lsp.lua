@@ -30,6 +30,23 @@ function M.setup()
   vim.api.nvim_create_autocmd("LspAttach", {
     callback = require("config.keymaps").on_lsp_attach,
   })
+
+  local reference_group = vim.api.nvim_create_augroup("LspDocumentHighlight", { clear = true })
+  vim.api.nvim_create_autocmd("CursorHold", {
+    group = reference_group,
+    callback = function(event)
+      local clients = vim.lsp.get_clients({ bufnr = event.buf, method = "textDocument/documentHighlight" })
+      if #clients > 0 then
+        vim.lsp.buf.document_highlight()
+      end
+    end,
+  })
+  vim.api.nvim_create_autocmd({ "CursorMoved", "InsertEnter", "BufLeave" }, {
+    group = reference_group,
+    callback = function(event)
+      vim.lsp.buf.clear_references()
+    end,
+  })
 end
 
 return M
