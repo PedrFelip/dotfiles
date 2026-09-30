@@ -16,12 +16,12 @@ hl.config({
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
 hl.config({
   decoration = {
-    rounding = 8,
+    rounding = 0,
 
-    inactive_opacity = 0.85,
+    -- inactive_opacity = 0.85,
 
     blur = {
-      enabled = true,
+      enabled = false,
       new_optimizations = true,
       xray = true,
 
@@ -30,7 +30,7 @@ hl.config({
     },
 
     shadow = {
-      enabled = true,
+      enabled = false,
       range = 20,
       render_power = 4,
       color = "rgba(05090a99)",
@@ -50,7 +50,7 @@ hl.config({
 hl.config({
   animations = {
     -- Disable all animations.
-    enabled = true,
+    enabled = false,
   },
 })
 
