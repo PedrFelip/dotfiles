@@ -4,6 +4,14 @@ map("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Limpar destaque da busca" })
 map("i", "jj", "<Esc>", { desc = "Sair do modo Insert" })
 map({ "n", "i" }, "<C-s>", "<cmd>write<CR>", { desc = "Salvar arquivo" })
 
+map("n", "H", "<cmd>BufferPrevious<CR>", { desc = "Buffer anterior" })
+map("n", "L", "<Cmd>BufferNext<CR>", { desc = "Próximo buffer" })
+map('n', '<A-,>', '<Cmd>BufferMovePrevious<CR>', { noremap = true, silent = true, desc = "Mover buffer para a esquerda" })
+map('n', '<A-.>', '<Cmd>BufferMoveNext<CR>', { noremap = true, silent = true, desc = "Mover buffer para a direita" })
+
+map("n", "<leader>bd", "<Cmd>BufferOrderByDirectory<CR>", { silent = true, desc = "Ordenar buffers por diretório" })
+map("n", "<leader>bc", "<Cmd>BufferClose<CR>", { noremap = true, silent = true, desc = "Fechar buffer" })
+
 map("n", "<C-h>", "<C-w>h", { desc = "Janela à esquerda" })
 map("n", "<C-j>", "<C-w>j", { desc = "Janela abaixo" })
 map("n", "<C-k>", "<C-w>k", { desc = "Janela acima" })
