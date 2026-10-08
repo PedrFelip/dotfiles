@@ -49,9 +49,9 @@
   },
   "cursor_blink": true,
   "relative_line_numbers": "enabled",
-  "ui_font_family": "iA Writer Mono S",
+  "ui_font_family": "IBM Plex Mono",
   "buffer_font_size": 20.0,
-  "buffer_font_family": "iA Writer Mono S",
+  "buffer_font_family": "IBM Plex Mono",
   "format_on_save": "on",
   "agent": {
     "sidebar_side": "right",
