@@ -27,22 +27,6 @@ local groups = {
   "NvimTreeNormal",
   "NvimTreeVertSplit",
   "NvimTreeEndOfBuffer",
-  -- nvim-notify
-  "NotifyINFOBody",
-  "NotifyERRORBody",
-  "NotifyWARNBody",
-  "NotifyTRACEBody",
-  "NotifyDEBUGBody",
-  "NotifyINFOTitle",
-  "NotifyERRORTitle",
-  "NotifyWARNTitle",
-  "NotifyTRACETitle",
-  "NotifyDEBUGTitle",
-  "NotifyINFOBorder",
-  "NotifyERRORBorder",
-  "NotifyWARNBorder",
-  "NotifyTRACEBorder",
-  "NotifyDEBUGBorder",
 }
 
 local function make_transparent(name)

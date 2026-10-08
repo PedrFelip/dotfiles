@@ -21,7 +21,7 @@ opt.tabstop = 2
 opt.scrolloff = 8
 opt.confirm = true
 opt.showmode = false
-opt.cmdheight = 0
+opt.cmdheight = 1
 opt.laststatus = 2
 opt.hlsearch = true
 
