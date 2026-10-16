@@ -6,7 +6,7 @@
   },
   "bar": {
     "position": "top",
-    "transparent": false,
+    "transparent": true,
     "centerAnchor": "omarchy.clock",
     "layout": {
       "left": [
@@ -34,18 +34,12 @@
           "id": "omarchy.weather"
         },
         {
-          "id": "stappmus.lyrics"
-        },
-        {
           "id": "omarchy.system-update"
         }
       ],
       "right": [
         {
           "id": "omarchy.tray"
-        },
-        {
-          "id": "quickshell.spotify"
         },
         {
           "id": "omarchy.agents"
