@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "session": {
+    "trust_all_worktrees": true,
+  },
   "diff_view_style": "unified",
   "diagnostics": {
     "inline": {
@@ -34,7 +37,7 @@
     "dock": "left",
     "tree_view": true,
   },
-  "base_keymap": "JetBrains",
+  "base_keymap": "Zed",
   "preview_tabs": {
     "enable_preview_from_file_finder": true,
   },
@@ -54,7 +57,6 @@
   "buffer_font_family": "IBM Plex Mono",
   "format_on_save": "on",
   "agent": {
-    "sidebar_side": "right",
     "dock": "right",
     "default_profile": "write",
     "inline_assistant_model": {
@@ -286,7 +288,7 @@
     "show_branch_name": false,
   },
   "tab_bar": {
-    "show": false,
+    "show": true,
   },
   "tabs": {
     "file_icons": true,
@@ -297,7 +299,7 @@
   "status_bar": {
     "active_language_button": false,
     "cursor_position_button": false,
-    "experimental.show": false,
+    "experimental.show": true,
   },
   "project_panel": {
     "dock": "right",

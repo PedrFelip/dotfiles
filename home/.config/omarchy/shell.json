@@ -19,6 +19,12 @@
       ],
       "center": [
         {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.system-update"
+        },
+        {
           "id": "omarchy.indicators"
         },
         {
@@ -28,16 +34,7 @@
           "verticalFormat": "HH\n—\nmm"
         },
         {
-          "id": "omarchy.keyboard-layout"
-        },
-        {
           "id": "omarchy.weather"
-        },
-        {
-          "id": "stappmus.lyrics"
-        },
-        {
-          "id": "omarchy.system-update"
         }
       ],
       "right": [
@@ -45,7 +42,8 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "quickshell.spotify"
+          "id": "akitaonrails.ai-usagebar",
+          "lastSelectedEntryId": "openai"
         },
         {
           "id": "omarchy.agents"

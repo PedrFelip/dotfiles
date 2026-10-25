@@ -8,12 +8,7 @@
 [
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
-    "bindings": {
-      // Git
-      "space g s": "git_panel::ToggleFocus",
-      "space a c": "agent::ToggleFocus",
-      "space a n": "agent::NewTerminalThread",
-    },
+    "bindings": {},
   },
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
@@ -22,18 +17,10 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
-      "shift-h": "pane::ActivatePreviousItem",
-      "shift-l": "pane::ActivateNextItem",
-      "ctrl-q": "pane::CloseActiveItem",
+      "alt-h": "pane::ActivatePreviousItem",
+      "alt-l": "pane::ActivateNextItem",
       "alt-k": "editor::MoveLineUp",
       "alt-j": "editor::MoveLineDown",
-      "space f n": "workspace::NewFile",
-      "ctrl-shift-k": "vim::ResizePaneUp",
-      "ctrl-shift-j": "vim::ResizePaneDown",
-      "ctrl-shift-h": "vim::ResizePaneLeft",
-      "ctrl-shift-l": "vim::ResizePaneRight",
-      "space space": "file_finder::Toggle",
-      "space e": "pane::RevealInProjectPanel",
     },
   },
   {
@@ -48,8 +35,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle",
-      // "space t t": "workspace::ToggleBottomDock",
+      "alt-h": "pane::ActivatePreviousItem",
+      "alt-l": "pane::ActivateNextItem",
     },
   },
   {
@@ -63,7 +50,6 @@
       "p": "project_panel::Paste",
       "q": "workspace::ToggleRightDock",
 
-      // "space e": "workspace::ToggleRightDock",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
@@ -82,20 +68,13 @@
   },
   {
     "context": "EmptyPane || SharedScreen",
-    "bindings": {
-      // Open file finder
-      // "space space": "file_finder::Toggle",
-      // Open recent project
-      // "space f p": "projects::OpenRecent",
-      // Open AI chat
-      // "space a c": "agent::ToggleFocus",
-      // Git status
-      // "space g s": "git_panel::ToggleFocus",
-    },
+    "bindings": {},
   },
   {
     "context": "Terminal",
     "bindings": {
+      // close teminal
+      "ctrl-w": "pane::CloseActiveItem",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
