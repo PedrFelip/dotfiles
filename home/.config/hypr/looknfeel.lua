@@ -16,12 +16,12 @@ hl.config({
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
 hl.config({
   decoration = {
-    rounding = 8,
+    rounding = 0,
 
-    inactive_opacity = 0.85,
+    --inactive_opacity = 0.85,
 
     blur = {
-      enabled = true,
+      enabled = false,
       new_optimizations = true,
       xray = true,
 
