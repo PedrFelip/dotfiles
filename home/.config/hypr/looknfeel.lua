@@ -15,6 +15,7 @@ hl.config({
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
 hl.config({
+<<<<<<< HEAD
 	decoration = {
 		rounding = 0,
 
@@ -24,6 +25,17 @@ hl.config({
 			enabled = false,
 			new_optimizations = true,
 			xray = true,
+=======
+  decoration = {
+    rounding = 0,
+
+    --inactive_opacity = 0.85,
+
+    blur = {
+      enabled = false,
+      new_optimizations = true,
+      xray = true,
+>>>>>>> refs/remotes/origin/main
 
 			size = 6,
 			passes = 2,
