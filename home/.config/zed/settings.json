@@ -43,7 +43,7 @@
   },
   "preferred_line_length": 80,
   "prettier": {},
-  "vim_mode": false,
+  "vim_mode": true,
   "vim": {
     "cursor_shape": {
       "insert": "bar",
@@ -52,9 +52,9 @@
   },
   "cursor_blink": true,
   "relative_line_numbers": "enabled",
-  "ui_font_family": "IBM Plex Mono",
+  "ui_font_family": "iA Writer Mono S",
   "buffer_font_size": 20.0,
-  "buffer_font_family": "IBM Plex Mono",
+  "buffer_font_family": "iA Writer Mono S",
   "format_on_save": "on",
   "agent": {
     "dock": "right",
@@ -78,6 +78,9 @@
   "tab_size": 2,
   "languages": {
     "Markdown": {
+      "inlay_hints": {
+        "enabled": false,
+      },
       "use_on_type_format": true,
     },
     "Rust": {
@@ -122,9 +125,15 @@
     },
   },
   "edit_predictions": {
-    "allow_data_collection": "yes",
     "mode": "eager",
-    "provider": "zed",
+    "zed": {
+      "prediction_debounce": 0,
+    },
+    "copilot": {
+      "prediction_debounce": 0,
+    },
+    "allow_data_collection": "yes",
+    "provider": "copilot",
   },
   "ui_font_size": 20.0,
   "buffer_line_height": {
