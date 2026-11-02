@@ -14,3 +14,5 @@ source "$OMARCHY_PATH/default/bash/rc"
 # alias p='python'
 
 [[ -r "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
+
+. "$HOME/.local/share/../bin/env"
