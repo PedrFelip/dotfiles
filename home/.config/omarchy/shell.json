@@ -19,16 +19,7 @@
       ],
       "center": [
         {
-          "id": "omarchy.keyboard-layout"
-        },
-        {
-          "id": "omarchy.system-update"
-        },
-        {
           "id": "omarchy.indicators"
-        },
-        {
-          "id": "omarchy.keyboard-layout"
         },
         {
           "id": "omarchy.clock",
@@ -37,13 +28,16 @@
           "verticalFormat": "HH\n—\nmm"
         },
         {
+          "id": "omarchy.elsewhen"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
           "id": "omarchy.weather"
-<<<<<<< HEAD
-=======
         },
         {
           "id": "omarchy.system-update"
->>>>>>> refs/remotes/origin/main
         }
       ],
       "right": [
@@ -51,18 +45,7 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "akitaonrails.ai-usagebar",
-<<<<<<< HEAD
-          "lastSelectedEntryId": "openai"
-=======
-          "barWindow": "auto",
-          "colorCodeUsage": false,
-          "lastSelectedEntryId": "openai",
-          "showAll": false,
-          "showProvider": false,
-          "brandIcons": true,
-          "showValue": true
->>>>>>> refs/remotes/origin/main
+          "id": "akitaonrails.ai-usagebar"
         },
         {
           "id": "omarchy.agents"
