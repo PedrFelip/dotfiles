@@ -66,3 +66,6 @@ hl.unbind("SUPER + ALT + SHIFT + F")
 o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "$(omarchy-cmd-terminal-cwd)"' })
 
 o.window("com.thisisgm.flea.picker", { tag = "+floating-window" })
+
+-- Hex: press once to start dictation and again to stop.
+o.bind("SUPER + CTRL + SHIFT + V", "Hex dictation", "hex dictation toggle")
