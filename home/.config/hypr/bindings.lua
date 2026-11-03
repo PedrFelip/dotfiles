@@ -39,7 +39,7 @@ o.bind("SUPER + ALT + F", "Full Screen", hl.dsp.window.fullscreen({ mode = "full
 o.bind("SUPER + F", "Full Width", hl.dsp.window.fullscreen({ mode = "maximized" }))
 
 hl.unbind("SUPER + SHIFT + F")
-o.bind("SUPER + E", "File manager", { launch= "flea --gui" })
+o.bind("SUPER + E", "File manager", { launch = "flea --gui" })
 
 hl.unbind("SUPER + P")
 o.bind("SUPER + P", "Clipboard manager", "omarchy-shell shell toggle omarchy.clipboard")
@@ -58,7 +58,8 @@ hl.unbind("SUPER + SHIFT + C")
 hl.unbind("SUPER + SHIFT + O")
 
 o.bind("SUPER + SHIFT + S", "Screenshot", "omarchy-capture-screenshot")
-o.bind("SUPER + SHIFT + R", "Screenrecording", "omarchy-capture-screenrecording --stop-recording || omarchy-menu toggle trigger.capture.screenrecord")
+o.bind("SUPER + SHIFT + R", "Screenrecording",
+  "omarchy-capture-screenrecording --stop-recording || omarchy-menu toggle trigger.capture.screenrecord")
 o.bind("SUPER + SHIFT + C", "Color picker", "pkill hyprpicker || hyprpicker -a")
 o.bind("SUPER + SHIFT + O", "Extract text (OCR)", "omarchy-capture-text")
 
@@ -67,5 +68,11 @@ o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "
 
 o.window("com.thisisgm.flea.picker", { tag = "+floating-window" })
 
--- Hex: press once to start dictation and again to stop.
-o.bind("SUPER + CTRL + SHIFT + V", "Hex dictation", "hex dictation toggle")
+hl.bind("CTRL + SHIFT + 2", hl.dsp.global("com.t3tools.T3Code:capture-window"))
+
+-- Hex: Wayland dictation through the running app's CLI.
+o.bind("SUPER + CTRL + SHIFT + V", "Hex: start/stop dictation", "hex dictation toggle")
+
+-- Apps dock
+hl.unbind("SUPER + ALT + SPACE")
+o.bind("ALT + SPACE", "Apps", "omarchy-shell omarchy.dock apps")
