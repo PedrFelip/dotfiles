@@ -71,8 +71,4 @@ o.window("com.thisisgm.flea.picker", { tag = "+floating-window" })
 hl.bind("CTRL + SHIFT + 2", hl.dsp.global("com.t3tools.T3Code:capture-window"))
 
 -- Hex: Wayland dictation through the running app's CLI.
-o.bind("SUPER + CTRL + SHIFT + V", "Hex: start/stop dictation", "hex dictation toggle")
-
--- Apps dock
-hl.unbind("SUPER + ALT + SPACE")
-o.bind("ALT + SPACE", "Apps", "omarchy-shell omarchy.dock apps")
+o.rebind("ALT + SPACE", "Hex: start/stop dictation", "hex dictation toggle")

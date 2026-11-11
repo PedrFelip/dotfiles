@@ -24,7 +24,7 @@
     "show_other_hints": false,
     "show_parameter_hints": true,
   },
-  "theme": "Starship",
+  "theme": "Omazed",
   "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
     "button": false,
